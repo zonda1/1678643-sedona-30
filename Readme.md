@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Nick Braun](https://up.htmlacademy.ru/htmlcss/30/user/1678643).
-* Наставник: `Неизвестно`.
+* Наставник: `[Михаил Кислый] (https://htmlacademy.ru/profile/smart-grizzly)`.
 
 ---
 
