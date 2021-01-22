@@ -1,0 +1,72 @@
+/* pt-sans-regular - latin */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/pt-sans-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/pt-sans-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* pt-sans-700 - latin */
+  @font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/pt-sans-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/pt-sans-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+ html{
+     box-sizing: border-box;
+ }
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+/* body{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color:#333333;
+    
+ }
+
+Header styles start
+
+.header {
+    max-height: 56px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: chocolate;
+}
+.wrapper{
+    width: 1200px;
+    margin:0 auto;
+    background-color: white;
+}
+
+.header_wrapper {
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.header_link {       
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;
+}
+Header styles end*/
+
+/*Main styles start
+.intro {
+background: url(../img/background_photo.jpg) no-repeat center;
+background-size: cover;
+
+}
+
+Main styles end*/
