@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,41 +9,44 @@
 <header class="header">
 <div class="wrapper">
 <div class="header_wrapper">    
-          <nav class="header_nav">
-            <a href="/" class="header_logo-link">
-                <img src="img/logo.svg" alt="Седона — небольшой городок в Аризоне" class="header_logo-pic">
-            </a>
-             <ul class="header_list">
-               <a href="#!" class="header_link">Информация</a>
-             </ul>
-             <ul class="header_list">
-                 <a href="#!" class="header_link">Фото и видео</a>
-             </ul>
-             <ul class="header_list">
-                 <a href="#!" class="header_link">Карта штата</a>
-             </ul>
-             <ul class="header_list">
-                 <a href="Catalog.html" class="header_link">Гостиницы</a>
-             </ul>
-         </nav>
+    <nav class="header_nav">
+        <a href="/" class="header_logo-link">
+            <img src="img/logo.svg" alt="Седона — небольшой городок в Аризоне" class="header_logo-pic">
+        </a>
+        <ul class="header_list">
+        <li>
+            <a href="#" class="header_link">Информация</a>
+        </li>
+        <li>
+            <a href="#" class="header_link">Фото и видео</a>
+        </li>
+        <li>
+            <a href="#" class="header_link">Карта штата</a>
+        </li>
+        <li>
+            <a href="Catalog.html" class="header_link">Гостиницы</a>
+        </li>
+        </ul>     
+    </nav>
 </div>
 </div>
 </header>
 
 <main>
     <h1>Добро пожаловать в Седону</h1><!--Будет спрятан-->
-    <section class="intro">
-<img src="/img/background_photo.jpg" alt="">
-    </section>
+    <div>
+     <img src="/img/background_photo.jpg" alt="">
+    </div>
     <section class="benefits">
-    <h2>Преимущества</h2><!--Будет спрятан-->
-    <p>Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
-    <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    <ol>
-        <li>
-            <h3>Настоящий городок</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </li>
+     <h2>Преимущества</h2><!--Будет спрятан-->
+     <p>Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+     <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+     <div>
+        <h3>Настоящий городок</h3>
+        <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        <img src="/img/image_1.jpg" alt="Дом с американским флагом">
+     </div>
+     <div>
         <ul>
             <li>
                 <h3>Жилье</h3>
@@ -59,46 +61,52 @@
                 <p>Не только китайского, но и местного производства!</p>
             </li>
         </ul>
-        <li>
-            <h3>Там есть Мост дьявола</h3>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </li>
-        <li>
-            <h3>Небольшая площадь</h3>
-            <p>Все достопримечательности находятся очень близко</p>
-        </li>
-        <li>
-            <h3>Красивая дорога</h3>
-            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-        </li>
-        <li>
-            <h3>Мало туристов</h3>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-        </li>
-    </ol>
+     </div>
+     <div>
+        <h3>Там есть Мост дьявола</h3>
+        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <img src="/img/image_2.jpg" alt="Каньон с мостом дъявола">
+     </div>
+     <div>
+        <ul>
+            <li>
+                <h3>Небольшая площадь</h3>
+                <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li>
+                <h3>Красивая дорога</h3>
+                <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li>
+                <h3>Мало туристов</h3>
+                <p>Большинство едет в гранд каньон и толпится там</p>
+            </li>
+        </ul>
+     </div>  
+    
     </section>
     <section>
         <h2>Поиск гостиницы</h2><!--Будет спрятан-->
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    <form action="https://echo.htmlacademy.ru"  method="POST">
-    <p>
+     <form action="https://echo.htmlacademy.ru"  method="POST">
+     <div>
         <label for="date_arrival">Дата заезда</label>
         <input id="date_arrival" type="date" name="date_arrival">
-    </p>
-    <p>
+     </div>
+     <div>
         <label for="date_leaving">Дата выезда</label>
         <input id="date_leaving" type="date" name="date_leaving">
-    </p>
-    <p>
+     </div>
+     <div>
         <label for="adult">Взрослые</label>
         <input id="adult" type="number" name="adult_number">
     
         <label for="kids">Дети</label>
         <input id="kids" type="number" name="kids_number">
-    </p>  
-      <button type="button">Найти</button>
-    </form>
+     </div>  
+     <button type="button">Найти</button>
+     </form>
     </section>
     <section>
         <h2>Карта</h2><!--Будет спрятан-->
@@ -108,11 +116,13 @@
 
 <footer>
     <section>
+        <h2>Контакты</h2>
         <p>#VISITSEDONA<br>
-        ТЕЛ: +7(495) 666-01-66
+         ТЕЛ:<a href="tel:+74956660166">+7(495) 666-01-66</a>
         </p>
     </section>
     <section>
+        <h2>Мы в соцсетях</h2>
         <ul>
           <li>
             <a href="#">Вконтакте</a>
@@ -127,31 +137,9 @@
       </section>
       <p>
         WEBSITE BY
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
 </footer>
 </body>   
 </html>
 
- <!--
-
-    <div>
-        <a href="#!" class="header_link">Информация</a>
-    </div>
-    <div>
-        <a href="#!" class="header_link">Фото и видео</a>
-    </div>
-    <div>
-        <a href="/" class="header_logo-link">
-            <img src="img/logo.svg" alt="Седона — небольшой городок в Аризоне" class="header_logo-pic">
-      </a>
-    </div>
-    <div>
-        <a href="#!" class="header_link">Карта штата</a>
-    </div>
-    <div>
-        <a href="#!" class="header_link">Гостиницы</a>
-    </div> 
-
-
-    -->
