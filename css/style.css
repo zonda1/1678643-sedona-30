@@ -47,8 +47,8 @@ html {
   --special-blue-2: #5496BD;
   --special-brown-1: #604E43;
   --special-brown-2: #503E33;
-  --special-cream: #EBEBEB;
-  --special-grey: #E5E5E5;
+  --special-cream-1: #EBEBEB;
+  --special-cream-2: #E5E5E5;
   /*copyright */
   --special-black: #231F20;
   --special-grey: #BDBBBC;
@@ -213,14 +213,14 @@ a {
 }
 
 .visit-form input:hover {
-  background-color: var(--special-cream);
+  background-color: var(--special-cream-1);
 }
 
 .visit-form input:focus {
   background-color: var(--basic-white);
   outline: none;
   border: 2px solid;
-  border-color: var(--special-grey);
+  border-color: var(--special-cream-2);
 }
 
 
