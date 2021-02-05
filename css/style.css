@@ -54,6 +54,10 @@ html {
   --special-grey: #BDBBBC;
 }
 
+.page {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -67,6 +71,7 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
 
 /*Header styles start*/
 
@@ -109,15 +114,25 @@ a {
   color: var(--basic-brown);
 }
 
-
 /*Header styles end*/
 
 /*Main styles start*/
 
-
 .wrapper {
   width: 1200px;
   margin: 0 auto;
+}
+
+.structure {
+  display: grid;
+  grid-template-rows:
+    70px 1fr 120px;
+  min-height: 100vh;
+}
+
+.main-header {
+  height: 70px;
+  z-index: 1;
 }
 
 /*
@@ -132,6 +147,9 @@ a {
 .title-second-level {
   visibility: hidden;
 }
+.main-intro {
+  padding-bottom: 40px;
+}
 
 .feature-intro {
   font-weight: bold;
@@ -140,14 +158,34 @@ a {
 }
 
 .benefits-benefit {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, auto);
   color: var(--basic-white);
   background-color: var(--basic-blue);
+}
+
+.house-pic {
+  width: 800px;
+  grid-area: 1/2/4/3;
+  margin-left: auto;
+}
+
+.canyon-pic {
+  width: 800px;
+  grid-area: 1/1/4/2;
 }
 
 .benefit-title {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+}
+
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 0;
 }
 
 .benefits-content {
@@ -223,7 +261,6 @@ a {
   border-color: var(--special-cream-2);
 }
 
-
 .filters {
   background-color: var(--basic-blue);
   background-image: url(../img/form-background.jpg);
@@ -280,7 +317,6 @@ a {
   border-bottom: 2px dotted;
   border-color: var(--basic-blue);
   opacity: 1;
-
 }
 
 .sorting-item-link:focus {
@@ -360,11 +396,26 @@ a {
 
 /*Footer styles start*/
 
+.main-footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main-footer {
+  padding: 0;
+  margin: 0;
+}
+
 .footer-contacts {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+}
+
+.footer-social {
+  margin: 0;
+  justify-self: center;
 }
 
 .footer-phone {
@@ -374,6 +425,8 @@ a {
 .footer-copyright {
   font: inherit;
   line-height: 26px;
+  align-self: center;
+  margin: 0;
 }
 
 .background-icon {
