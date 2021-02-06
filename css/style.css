@@ -114,10 +114,6 @@ a {
   color: var(--basic-brown);
 }
 
-/*Header styles end*/
-
-/*Main styles start*/
-
 .wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -126,26 +122,49 @@ a {
 .structure {
   display: grid;
   grid-template-rows:
-    70px 1fr 120px;
-  min-height: 100vh;
+    56px 1fr 120px;
+  min-height: 100%;
 }
 
 .main-header {
-  height: 70px;
   z-index: 1;
 }
 
-/*
-.header_wrapper {
+.main-nav {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
 }
-*/
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  height: 56px;
+  align-items: center;
+
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+  position: absolute;
+  align-self: center;
+}
+
+.header-nav :nth-child(2) {
+  padding-right: 131px;
+}
+
+.header-nav :nth-child(3) {
+  padding-left: 131px;
+}
+
+/*Header styles end*/
+
+/*Main styles start*/
 
 .feature-title,
 .title-second-level {
-  visibility: hidden;
+  display: none;
 }
 
 .main-intro {
@@ -159,22 +178,33 @@ a {
 }
 
 .benefits-benefit {
-  display: grid;
+  display: flex;
+  /* display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);*/
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
 
+.benefits-benefit div {
+  width: 400px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 25px 0 40px;
+}
+
 .house-pic {
   width: 800px;
-  grid-area: 1/2/4/3;
+  /* grid-area: 1/2/4/3; */
   margin-left: auto;
 }
 
 .canyon-pic {
+  order: -1;
   width: 800px;
-  grid-area: 1/1/4/2;
+  /* grid-area: 1/1/4/2; */
 }
 
 .benefit-title {
@@ -486,11 +516,7 @@ a {
 .main-footer .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.main-footer {
-  padding: 0;
-  margin: 0;
+  align-items: center;
 }
 
 .footer-contacts {
@@ -501,7 +527,6 @@ a {
 }
 
 .footer-social {
-  margin: 0;
   justify-self: center;
 }
 
@@ -509,24 +534,25 @@ a {
   color: inherit
 }
 
-.footer-copyright {
-  font: inherit;
-  line-height: 26px;
-  align-self: center;
-  margin: 0;
+.social-list {
+  display: flex;
 }
 
 .background-icon {
   display: flex;
-  margin-bottom: 10px;
 }
 
 .social-button {
   width: 46px;
   height: 48px;
-  align-items: center;
   justify-content: center;
   background-color: var(--basic-blue);
+  margin-right: 10px;
+}
+
+.social-button img {
+  height: 48px;
+  align-items: center;
 }
 
 .social-button:hover {
@@ -535,6 +561,13 @@ a {
 
 .social-button:focus {
   background-color: var(--special-blue-2);
+}
+
+.footer-copyright {
+  font: inherit;
+  line-height: 26px;
+
+  margin: 0;
 }
 
 /*Footer styles end*/
