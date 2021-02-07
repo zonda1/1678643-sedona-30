@@ -369,36 +369,44 @@ a {
 }
 
 .sorting {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  height: 86px;
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: auto 1fr; */
   padding: 0 70px;
   margin: 0;
 }
 
 
 .sorting-result {
-  grid-column: 1/2;
-  justify-self: start;
+  /* grid-column: 1/2;
+  justify-self: start; */
+  margin-right: 46px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
 .sorting-title {
-  justify-self: start;
+   /* justify-self: start; */
+   margin-right: 40px;
   font-size: 12px;
   line-height: 18px;
   padding: 10px;
 }
 
 .sorting-list {
-  justify-self: start;
-  grid-column: 2/3;
+  display: flex;
+
+  /* justify-self: start;
+  grid-column: 2/3; */
   font-size: 12px;
   line-height: 18px;
 }
 
 .sorting-item-link {
+  margin-right: 40px;
   color: var(--basic-black);
   opacity: 0.3;
   border-bottom: 2px dotted;
