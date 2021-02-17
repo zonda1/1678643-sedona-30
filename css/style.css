@@ -49,6 +49,7 @@ html {
   --special-brown-2: #503E33;
   --special-cream-1: #EBEBEB;
   --special-cream-2: #E5E5E5;
+  --special-cream-3: #CFCFCF;
   --special-dark-1: #ABABAB;
   /*copyright */
   --special-black: #231F20;
@@ -609,7 +610,7 @@ a {
   border-color: var(--basic-white);
   background-color: var(--special-dark-1);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--special-cream-3);
   cursor: pointer;
 }
 
