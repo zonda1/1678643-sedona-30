@@ -54,6 +54,9 @@ html {
   /*copyright */
   --special-black: #231F20;
   --special-grey: #BDBBBC;
+  /* shadows */
+  --shadow-1: 0, 0, 0;
+  --shadow-2: 0, 1, 1;
 }
 
 .page {
@@ -119,22 +122,33 @@ a {
   width: 1200px;
   margin: 0 auto;
   position: relative;
+
 }
 
 .structure {
+  background-color: var(--basic-cream);
+}
+
+.structure-wrapper {
   display: grid;
   grid-template-rows:
     56px 1fr 120px;
   min-height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 5px 15px rgba(var(--shadow-2), 0.2);
+
 }
 
 .main-header {
   z-index: 1;
+  background-color: var(--basic-white);
 }
 
 .main-nav {
   display: flex;
   width: 1200px;
+
 }
 
 .header-nav {
@@ -144,7 +158,7 @@ a {
   width: 100%;
   height: 56px;
   align-items: center;
-
+  box-shadow: 0px 4px 4px rgba(var(--shadow-1), 0.25);
 }
 
 .main-header-logo {
@@ -152,6 +166,7 @@ a {
   width: 138px;
   height: 70px;
   left: 531px;
+  z-index: 1;
 }
 
 .header-item {
@@ -183,6 +198,10 @@ a {
 
 /*Main styles start*/
 
+.main-feature {
+  background-color: var(--basic-white);
+}
+
 .feature-title,
 .title-second-level {
   display: none;
@@ -192,6 +211,7 @@ a {
   height: 509px;
   margin-bottom: 42px;
   position: relative;
+
 }
 
 .welcome-title-pic {
@@ -199,6 +219,7 @@ a {
   top: 77px;
   left: 371px;
 }
+
 
 .main-intro {
   margin-bottom: 53px;
@@ -317,7 +338,7 @@ a {
 }
 
 .button-search {
-  margin-top: 31px;
+
   width: 568px;
   height: 86px;
   font-weight: bold;
@@ -328,6 +349,8 @@ a {
   background-color: var(--basic-brown);
   color: var(--basic-white);
   border: none;
+  margin-top: 31px;
+
 }
 
 .button-search:hover {
@@ -345,32 +368,31 @@ a {
 }
 
 .visit {
-  position: relative;
-  margin-bottom: 78px;
+  padding-bottom: 473px;
 }
 
 .visit-form {
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
-  color: var(--basic-black)
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .visit-form-wrapper {
   width: 568px;
   height: 395px;
-  margin: 0 auto;
   padding: 0 55px;
   background-color: var(--basic-white);
   padding-top: 55px;
+  position: absolute;
+  left: 316px;
   z-index: 1;
+  box-shadow: 0px 7px 15px rgba(var(--shadow-2), 0.15);
 }
 
 .map {
   position: absolute;
-  top: 233px;
-  left: 0;
-  z-index: -1;
 }
 
 .button-search-inner {
@@ -979,7 +1001,7 @@ a {
   align-items: center;
   background-color: var(--basic-white);
   opacity: 0.8;
-  z-index: 1;
+  z-index: 2;
 }
 
 .footer-contacts {
