@@ -290,7 +290,7 @@ a {
 
 .benefits-ordinary {
   height: 330px;
-  }
+}
 
 
 .benefits-ordinary-item {
@@ -554,6 +554,8 @@ a {
   overflow: hidden;
 }
 
+/* Catalog hotel filter styles starts */
+
 .filters {
   padding: 25px 60px 0;
   height: 217px;
@@ -630,6 +632,9 @@ a {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:focus+label {
+  box-shadow: 0 0 0 2px var(--basic-white);
+}
 
 .hotel-type .legend-name {
   margin-left: -50px;
@@ -647,8 +652,10 @@ a {
   margin-left: 133px;
 }
 
+/* Catalog hotel filter styles end */
 
-/* Price controls styles start */
+
+/* Catalog price controls styles start */
 
 .price {
   justify-self: end;
@@ -757,10 +764,11 @@ a {
   background-color: var(--basic-white);
 }
 
-/* Price controls styles end */
+/* Catalog price controls styles end */
 
 
 /* Catalog sorting styles start */
+
 .sorting {
   display: flex;
   height: 86px;
@@ -795,6 +803,11 @@ a {
   color: var(--basic-black);
 }
 
+.sorting-item-link-current {
+  color: var(--basic-blue);
+  margin-right: 33px;
+}
+
 .sorting-item-link span {
   opacity: 0.3;
   border-bottom: 1px dotted;
@@ -809,12 +822,6 @@ a {
 }
 
 .sorting-item-link:focus span {
-  color: var(--basic-blue);
-  border: none;
-  opacity: 1;
-}
-
-.sorting-item-link:active span {
   color: var(--basic-black);
   border: none;
   opacity: 1;
