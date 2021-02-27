@@ -385,11 +385,67 @@ a {
 }
 
 .visit-form {
+  display: none;
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-white);
+
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-300px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.visit-form-open {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 1s;
+  position: absolute;
+  z-index: 1;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 2.6s;
 }
 
 .visit-form-wrapper {
@@ -406,6 +462,7 @@ a {
 
 .map {
   position: absolute;
+
 }
 
 .button-search-inner {

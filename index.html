@@ -9,7 +9,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="structure">
@@ -114,11 +114,11 @@
           <p class="visit-intro">Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button-search" type="button"><span>Поиск гостиницы в седоне</span></button>
-          <form class="visit-form" action="https://echo.htmlacademy.ru" method="POST">
+          <form class="visit-form" action="https://echo.htmlacademy.ru" method="POST" target="_blank">
             <div class="visit-form-wrapper">
               <div class="visit-date-arrival">
                 <label for="date_arrival">Дата заезда:</label>
-                <input id="date_arrival" type="text" name="date_arrival" value="24 апреля 2017">
+                <input id="date_arrival" type="text" name="date_arrival" value="24 апреля 2017" required>
                 <a href="#" class="calendar-link" aria-label="Календарь">
                   <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -132,7 +132,7 @@
               </div>
               <div class="visit-date-leaving">
                 <label for="date_leaving">Дата выезда:</label>
-                <input id="date_leaving" type="text" name="date_leaving" value="4 июля 2017">
+                <input id="date_leaving" type="text" name="date_leaving" value="4 июля 2017" required>
                 <a href="#" class="calendar-link" aria-label="Календарь">
                   <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -152,7 +152,7 @@
                       <rect width="12" height="3" fill="#A9A9A9" />
                     </svg>
                   </a>
-                  <input id="adult" type="text" name="adult_number" value="2">
+                  <input id="adult" type="text" name="adult_number" value="2" >
                   <a href="#" class="plus-link" aria-label="Значение больше">
                     <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -178,7 +178,7 @@
                   </a>
                 </div>
               </div>
-              <button class="button-search button-search-inner" type="button"><span>Найти</span></button>
+              <button class="button-search button-search-inner" type="submit"><span>Найти</span></button>
             </div>
           </form>
           <div class="map">
@@ -227,7 +227,7 @@
       </div>
     </footer>
   </div>
-
+<script src="js/popup.js"></script>
 </body>
 
 
